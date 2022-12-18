@@ -29,13 +29,13 @@ This repository is a collection of all my commonly used settings, defaults and k
 
 ## 1 - General keyboard shortcuts
 
-|                         Shortcut                          | Function                                |
-| :-------------------------------------------------------: | --------------------------------------- |
+| Shortcut                                                  | Function                                |
+| --------------------------------------------------------- | --------------------------------------- |
 | <kbd>Ctrl</kbd> + <kbd>Left-click</kbd> (on menu/toolbar) | Edit corresponding shortcut-combination |
-|        <kbd>Escape</kbd> / <kbd>Right-click</kbd>         | Cancel                                  |
-|              <kbd>Shift</kbd> + <kbd>C</kbd>              | Clear filter                            |
-|              <kbd>Ctrl</kbd> + <kbd>R</kbd>               | Duplicate selection (rubber stamp)      |
-|              <kbd>Ctrl</kbd> + <kbd>M</kbd>               | Measure                                 |
+| <kbd>Escape</kbd> / <kbd>Right-click</kbd>                | Cancel                                  |
+| <kbd>Shift</kbd> + <kbd>C</kbd>                           | Clear filter                            |
+| <kbd>Ctrl</kbd> + <kbd>R</kbd>                            | Duplicate selection (rubber stamp)      |
+| <kbd>Ctrl</kbd> + <kbd>M</kbd>                            | Measure                                 |
 
 <br/>
 
@@ -101,7 +101,7 @@ TODO
         - <kbd>Ctrl</kbd> + <kbd>F</kbd> : Flip board<br/>
         - Hold <kbd>Shift</kbd> : Speedup panning (when moving)<br/>
         - <kbd>V</kbd>, <kbd>F</kbd> : <i><u>V</u>iew > <u>F</u>it Board</i><br/><br/>
-        - <kbd>Q</kbd> : Change units (PCB layout = <code>mm</code> !)<br/>
+        - <kbd>Q</kbd> : Change units (PCB layout = <code>mm</code>!)<br/>
         - <kbd>Shift</kbd> + <kbd>H</kbd> : Toggle HUD<br/>
         - <kbd>Insert</kbd> / <kbd>Left-click</kbd> : Reset HUD-delta<br/>
       </td>
@@ -123,8 +123,8 @@ TODO
       <td>
         - <kbd>Tab</kbd> : Select next (track-segment, ...)<br/>
         - <kbd>Shift</kbd> + <kbd>Tab</kbd> : Change selected (overlapping) item<br/><br/>
-        - <kbd>Alt</kbd> + Drag (L&rarr;R) : Only select (multiple) connections<br/>
-        - <kbd>Ctrl</kbd> + Drag (L&rarr;R) : Only select (multiple) pads<br/><br/>
+        - <kbd>Alt</kbd> + Drag (L&rArr;R) : Only select (multiple) connections<br/>
+        - <kbd>Ctrl</kbd> + Drag (L&rArr;R) : Only select (multiple) pads<br/><br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> Toggle cross-select mode<br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd> Toggle reposition selected component in PCB<br/>
       </td>
@@ -156,12 +156,12 @@ TODO
       </td>
       <td>
         - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> : Simplify selected tracks (<i>gloss</i>)<br/>
-        - :pencil2: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/></br>
+        - :pencil: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/></br>
         - <kbd>+</kbd> / <kbd>-</kbd> (numpad)<br/>
-        &nbsp; &rarr; :pencil2:<kbd>=</kbd> / :pencil2:<kbd>-</kbd> : Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in <i>bottom-layer-bar</i>)<br/>
+        &nbsp; &rArr; :pencil:<kbd>=</kbd> / :pencil:<kbd>-</kbd> : Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in <i>bottom-layer-bar</i>)<br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + Scroll : Layer up/down<br/><br/>
         - (<kbd>Shift</kbd> +) <kbd>*</kbd> (numpad)</br>
-        &nbsp; &rarr; :pencil2:<kbd>$</kbd> : Change signal layer (& add via)<br/>
+        &nbsp; &rArr; :pencil:<kbd>$</kbd> : Change signal layer (& add via)<br/>
         - <kbd>/</kbd> (numpad) : Go to power plane & add via<br/><br/>
         - <kbd>L</kbd> : Change component layer<br/>
         - <kbd>Ctrl</kbd> + <kbd>L</kbd> : Change layer<br/><br/><br/>
