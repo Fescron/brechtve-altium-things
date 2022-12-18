@@ -92,8 +92,8 @@ TODO
   <tbody>
     <tr></tr>
     <tr>
-      <th width="500px">Viewing</th>
-      <th width="500px">Viewing</th>
+      <th width="505px">Viewing</th>
+      <th width="505px">Viewing</th>
     </tr>
     <tr>
       <td>
@@ -106,7 +106,7 @@ TODO
         - <kbd>V</kbd>, <kbd>F</kbd> : <i><u>V</u>iew > <u>F</u>it Board</i><br/><br/>
         - <kbd>Q</kbd> : Change units (PCB layout = <code>mm</code> !)<br/>
         - <kbd>Shift</kbd> + <kbd>H</kbd> : Toggle HUD<br/>
-        - <kbd>Insert</kbd> / <kbd>Left-click</kbd> : Reset HUD-delta<br/><br/>
+        - <kbd>Insert</kbd> / <kbd>Left-click</kbd> : Reset HUD-delta<br/>
       </td>
       <td>
         - <kbd>L</kbd> : Show (active) layers<br/>
@@ -115,7 +115,7 @@ TODO
         - <kbd>Ctrl</kbd> + <kbd>Left-click</kbd> : Highlight net<br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Left-click</kbd> : Add highlighted net to selection<br/><br/>
         - <kbd>Ctrl</kbd> (?) : View alignment lines in relation to boundaries of nearby components<br/>
-        - <kbd>Shift</kbd> : View alignment lines in relation to pads of nearby components<br/><br/>
+        - <kbd>Shift</kbd> : View alignment lines in relation to pads of nearby components<br/>
       </td>
     </tr>
     <tr>
