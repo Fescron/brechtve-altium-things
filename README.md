@@ -137,12 +137,12 @@ TODO
         - <kbd>Ctrl</kbd> : Temporary disable snapping<br/>
         - <kbd>Ctrl</kbd> + Drag : Add vertex to polygon<br/><br/>
         - <kbd>Ctrl</kbd> + (<kbd>Shift</kbd> +) <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>right</kbd> : Move selection<br/>
-        - Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd> : Move selection<br/>
+        - Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd> : Move selection<br/><br/>
       </td>
     </tr>
     <tr>
       <th>Routing</th>
-      <th>Routing (layer-changing)</th>
+      <th>Routing</th>
     </tr>
     <tr>
       <td>
@@ -155,14 +155,16 @@ TODO
         - <kbd>9</kbd> : Go to other end<br/><br/>
         - (<kbd>Shift</kbd> +) <kbd>W</kbd> : Change tracks size (?)<br/>
         - <kbd>Shift</kbd> + <kbd>V</kbd> / <kbd>Shift</kbd> + <kbd>A</kbd> / <kbd>4</kbd> : Change via size (?)<br/>
-        - <kbd>Space</kbd> : Change track angle<br/><br/>
-        - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> : Simplify selected tracks (<i>gloss</i>)<br/>
-        - :pencil2: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/>
+        - <kbd>Space</kbd> : Change track angle<br/>
       </td>
       <td>
-        - <kbd>+</kbd> / <kbd>-</kbd> (numpad) &rarr; :pencil2:<kbd>=</kbd> / :pencil2:<kbd>-</kbd> : Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in <i>bottom-layer-bar</i>)<br/>
+        - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> : Simplify selected tracks (<i>gloss</i>)<br/>
+        - :pencil2: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/></br>
+        - <kbd>+</kbd> / <kbd>-</kbd> (numpad)<br/>
+        &nbsp; &rarr; :pencil2:<kbd>=</kbd> / :pencil2:<kbd>-</kbd> : Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in <i>bottom-layer-bar</i>)<br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + Scroll : Layer up/down<br/><br/>
-        - (<kbd>Shift</kbd> +) <kbd>*</kbd> (numpad) &rarr; :pencil2:<kbd>$</kbd> : Change signal layer (& add via)<br/>
+        - (<kbd>Shift</kbd> +) <kbd>*</kbd> (numpad)</br>
+        &nbsp; &rarr; :pencil2:<kbd>$</kbd> : Change signal layer (& add via)<br/>
         - <kbd>/</kbd> (numpad) : Go to power plane & add via<br/><br/>
         - <kbd>L</kbd> : Change component layer<br/>
         - <kbd>Ctrl</kbd> + <kbd>L</kbd> : Change layer<br/>
