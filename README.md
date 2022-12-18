@@ -24,7 +24,6 @@ This repository is a collection of all my commonly used settings, defaults and k
   - [3 - PCB Layout](#3---pcb-layout)
     - [3.1 - Tips \& Tricks](#31---tips--tricks)
     - [3.2 - Keyboard shortcuts](#32---keyboard-shortcuts)
-      - [3.2.1 - Viewing](#321---viewing)
 
 <br/>
 
@@ -86,8 +85,6 @@ TODO
 
 ### 3.2 - Keyboard shortcuts
 
-#### 3.2.1 - Viewing
-
 <table>
   <tbody>
     <tr></tr>
@@ -137,7 +134,7 @@ TODO
         - <kbd>Ctrl</kbd> : Temporary disable snapping<br/>
         - <kbd>Ctrl</kbd> + Drag : Add vertex to polygon<br/><br/>
         - <kbd>Ctrl</kbd> + (<kbd>Shift</kbd> +) <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>right</kbd> : Move selection<br/>
-        - Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd> : Move selection<br/><br/>
+        - Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd> : Move selection<br/><br/><br/>
       </td>
     </tr>
     <tr>
@@ -167,7 +164,7 @@ TODO
         &nbsp; &rarr; :pencil2:<kbd>$</kbd> : Change signal layer (& add via)<br/>
         - <kbd>/</kbd> (numpad) : Go to power plane & add via<br/><br/>
         - <kbd>L</kbd> : Change component layer<br/>
-        - <kbd>Ctrl</kbd> + <kbd>L</kbd> : Change layer<br/>
+        - <kbd>Ctrl</kbd> + <kbd>L</kbd> : Change layer<br/><br/><br/>
       </td>
     </tr>
   </tbody>
