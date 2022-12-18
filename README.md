@@ -17,7 +17,6 @@ This repository is a collection of all my commonly used settings, defaults and k
 
 - [Altium Things](#altium-things)
   - [Table of Contents](#table-of-contents)
-  - [0 - Legend](#0---legend)
   - [1 - General keyboard shortcuts](#1---general-keyboard-shortcuts)
   - [2 - Schematic Layout](#2---schematic-layout)
     - [2.1 - Tips \& Tricks](#21---tips--tricks)
@@ -29,16 +28,6 @@ This repository is a collection of all my commonly used settings, defaults and k
 
 <br/>
 
-## 0 - Legend
-
-| Syntax                                                       | Meaning                                                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| *[M]enu-item* > *Su[b]-menu-item*                            | Square brackets indicate a keyboard-letter which can be pressed to trigger that menu-entry |
-| `number` [NUM]                                               | Key pressed on the number-pad                                                              |
-| <kbd>Default key</kbd> &rarr; :pencil2:<kbd>Custom key</kbd> | Non-default keyboard-shortcut                                                              |
-
-<br/>
-
 ## 1 - General keyboard shortcuts
 
 |                         Shortcut                          | Function                                |
@@ -47,7 +36,7 @@ This repository is a collection of all my commonly used settings, defaults and k
 |        <kbd>Escape</kbd> / <kbd>Right-click</kbd>         | Cancel                                  |
 |              <kbd>Shift</kbd> + <kbd>C</kbd>              | Clear filter                            |
 |              <kbd>Ctrl</kbd> + <kbd>R</kbd>               | Duplicate selection (rubber stamp)      |
-|              <kbd>Ctrl</kbd> + <kbd>M</kbd>               | Measure things                          |
+|              <kbd>Ctrl</kbd> + <kbd>M</kbd>               | Measure                                 |
 
 <br/>
 
@@ -74,9 +63,9 @@ TODO
 - Placing a `&` before a letter (layer-view-names, ...) makes it so the corresponding keyboard-letter can be pressed to trigger the entry when the menu is open
 - Pressing <kbd>Tab</kbd> when routing, ... can be used to change the current settings (<kbd>Enter</kbd> to exit)
 - **Change board dimensions** (*route-toolpath-lines* on layer `Mech-28`, `1 mm` grid)
-  - *[D]esign* > *Board [S]hape* > *[D]efine board shape from selected objects* (<kbd>Tab</kbd> so select all lines)
-  - *[T]ools* > *[C]onvert* > *Create board cutout from selected primitives*
-- Check clearance between polygons, ... : *[R]eport* > *Measure [P]rimitives* > *Check clearance between polygons*
+  - *<u>D</u>esign* > *Board <u>S</u>hape* > *<u>D</u>efine board shape from selected objects* (<kbd>Tab</kbd> so select all lines)
+  - *<u>T</u>ools* > *<u>C</u>onvert* > *Create board cutout from selected primitives*
+- Check clearance between polygons, ... : *<u>R</u>eport* > *Measure <u>P</u>rimitives* > *Check clearance between polygons*
 
 | Defaults   |                                  |                           |                          |
 | ---------- | -------------------------------- | ------------------------- | ------------------------ |
@@ -100,13 +89,12 @@ TODO
 #### 3.2.1 - Viewing
 
 <table>
-  <thead>
+  <tbody>
+    <tr></tr>
     <tr>
       <th width="500px">Viewing</th>
-      <th width="500px">Selection</th>
+      <th width="500px">Viewing</th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>
         - <kbd>1</kbd> : Enable Board Planning mode<br/>
@@ -119,6 +107,8 @@ TODO
         - <kbd>Q</kbd> : Change units (PCB layout = <code>mm</code> !)<br/>
         - <kbd>Shift</kbd> + <kbd>H</kbd> : Toggle HUD<br/>
         - <kbd>Insert</kbd> / <kbd>Left-click</kbd> : Reset HUD-delta<br/><br/>
+      </td>
+      <td>
         - <kbd>L</kbd> : Show (active) layers<br/>
         - <kbd>Shift</kbd> + <kbd>S</kbd> : Cycle (active) layers<br/><br/>
         - Hold <kbd>Shift</kbd> : Highlight net on hover<br/>
@@ -126,8 +116,13 @@ TODO
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Left-click</kbd> : Add highlighted net to selection<br/><br/>
         - <kbd>Ctrl</kbd> (?) : View alignment lines in relation to boundaries of nearby components<br/>
         - <kbd>Shift</kbd> : View alignment lines in relation to pads of nearby components<br/><br/>
-        - :round_pushpin: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/>
       </td>
+    </tr>
+    <tr>
+      <th>Selection</th>
+      <th>Moving</th>
+    </tr>
+    <tr>
       <td>
         - <kbd>Tab</kbd> : Select next (track-segment, ...)<br/>
         - <kbd>Shift</kbd> + <kbd>Tab</kbd> : Change selected (overlapping) item<br/><br/>
@@ -136,26 +131,42 @@ TODO
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> Toggle cross-select mode<br/>
         - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd> Toggle reposition selected component in PCB<br/>
       </td>
+      <td>
+        - <kbd>Ctrl</kbd> + <kbd>E</kbd> : Display snap pallette options<br/>
+        - <kbd>Shift</kbd> + <kbd>E</kbd> : Change layer snapping (?)<br/>
+        - <kbd>Ctrl</kbd> : Temporary disable snapping<br/>
+        - <kbd>Ctrl</kbd> + Drag : Add vertex to polygon<br/><br/>
+        - <kbd>Ctrl</kbd> + (<kbd>Shift</kbd> +) <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>right</kbd> : Move selection<br/>
+        - Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd> : Move selection<br/>
+      </td>
+    </tr>
+    <tr>
+      <th>Routing</th>
+      <th>Routing (layer-changing)</th>
+    </tr>
+    <tr>
+      <td>
+        - <kbd>Ctrl</kbd> + <kbd>W</kbd> : Start interactive routing<br/>
+        - <kbd>Ctrl</kbd> + <kbd>Left-click</kbd> : Try to autoroute current connection<br/><br/>
+        - <kbd>Backspace</kbd> : Delete current & select next track-segment (/undo last segment)<br/>
+        - <kbd>Delete</kbd> : Delete (item, track, ...)<br/><br/>
+        - (<kbd>Shift</kbd> +) <kbd>R</kbd> : Cycle placement modes (ignore - push - avoid)<br/>
+        - <kbd>Ctrl</kbd> + <kbd>W</kbd> : Toggle clearance boundaries<br/><br/>
+        - <kbd>9</kbd> : Go to other end<br/><br/>
+        - (<kbd>Shift</kbd> +) <kbd>W</kbd> : Change tracks size (?)<br/>
+        - <kbd>Shift</kbd> + <kbd>V</kbd> / <kbd>Shift</kbd> + <kbd>A</kbd> / <kbd>4</kbd> : Change via size (?)<br/>
+        - <kbd>Space</kbd> : Change track angle<br/><br/>
+        - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> : Simplify selected tracks (<i>gloss</i>)<br/>
+        - :pencil2: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> : Repour all polygons<br/>
+      </td>
+      <td>
+        - <kbd>+</kbd> / <kbd>-</kbd> (numpad) &rarr; :pencil2:<kbd>=</kbd> / :pencil2:<kbd>-</kbd> : Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in <i>bottom-layer-bar</i>)<br/>
+        - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + Scroll : Layer up/down<br/><br/>
+        - (<kbd>Shift</kbd> +) <kbd>*</kbd> (numpad) &rarr; :pencil2:<kbd>$</kbd> : Change signal layer (& add via)<br/>
+        - <kbd>/</kbd> (numpad) : Go to power plane & add via<br/><br/>
+        - <kbd>L</kbd> : Change component layer<br/>
+        - <kbd>Ctrl</kbd> + <kbd>L</kbd> : Change layer<br/>
+      </td>
     </tr>
   </tbody>
 </table>
-
-|                                                                                                             |                                                                                   |                                                                                  |                                     |
-| :---------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- | :------------------------------------------------------------------------------: | ----------------------------------- |
-|                                                                                                             | **Moving**                                                                        |                                                                                  | **Moving**                          |
-|                                       <kbd>Ctrl</kbd> + <kbd>E</kbd>                                        | Display snap pallette options                                                     |                         <kbd>Shift</kbd> + <kbd>E</kbd>                          | Change layer snapping (?)           |
-|                                               <kbd>Ctrl</kbd>                                               | Temporary disable snapping                                                        |                              <kbd>Ctrl</kbd> + Drag                              | Add vertex to polygon               |
-| <kbd>Ctrl</kbd> + (<kbd>Shift</kbd> +) <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>right</kbd> | Move selection                                                                    |   Drag + <kbd>Up</kbd> / <kbd>Down</kbd> / <kbd>Left</kbd> / <kbd>Right</kbd>    | Move selection                      |
-|                                                   &nbsp;                                                    |                                                                                   |                                                                                  |                                     |
-|                                                                                                             | **Routing**                                                                       |                                                                                  | **Routing**                         |
-|                                       <kbd>Ctrl</kbd> + <kbd>W</kbd>                                        | Start interactive routing                                                         |                     <kbd>Ctrl</kbd> + <kbd>Left-click</kbd>                      | Try to autoroute current connection |
-|                                            <kbd>Backspace</kbd>                                             | Delete current & select next track-segment (/undo last segment)                   |                                <kbd>Delete</kbd>                                 | Delete (item, track, ...)           |
-|                                      (<kbd>Shift</kbd> +) <kbd>R</kbd>                                      | Cycle placement modes (ignore - push - avoid)                                     |                          <kbd>Ctrl</kbd> + <kbd>W</kbd>                          | Toggle clearance boundaries         |
-|                               <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd>                               | Simplify selected tracks (*gloss*)                                                |                                   <kbd>9</kbd>                                   | Go to other end                     |
-|                                      (<kbd>Shift</kbd> +) <kbd>W</kbd>                                      | Change tracks size (?)                                                            | <kbd>Shift</kbd> + <kbd>V</kbd> / <kbd>Shift</kbd> + <kbd>A</kbd> / <kbd>4</kbd> | Change via size (?)                 |
-|                                              <kbd>Space</kbd>                                               | Change track angle (?)                                                            |                                                                                  |                                     |
-|                                                   &nbsp;                                                    |                                                                                   |                                                                                  |                                     |
-|                                                                                                             | **Routing (layer-changing)**                                                      |                                                                                  | **Routing (layer-changing)**        |
-|                    `+` / `-` [NUM] &rarr; :pencil2:<kbd>=</kbd> / :pencil2:<kbd>-</kbd>                     | Change layer (or (<kbd>Ctrl</kbd> +) <kbd>Left-click</kbd> in *bottom-layer-bar*) |                   <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + Scroll                    | Layer up/down                       |
-|                         (<kbd>Shift</kbd> +) `*` [NUM] &rarr; :pencil2:<kbd>$</kbd>                         | Change signal layer (& add via)                                                   |                                    `/` [NUM]                                     | Go to power plane & add via         |
-|                                                <kbd>L</kbd>                                                 | Change component layer                                                            |                          <kbd>Ctrl</kbd> + <kbd>L</kbd>                          | Change layer                        |
